@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Contacto</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Welcome to my CS50 homepage project" />
+    <script>
+      function myFunction() {
+        document.getElementById("cambio").innerHTML =
+          "Gracias por contactarme! Te respondere lo mas pronto posible";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <ul>
+          <li><a href="index.html">Informacion</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li class="active"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <h2 id="cambio">Enviame un mensaje.</h1>
+    </header>
+    <main id="contact">
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">Nombre</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Tu nombre.."
+          />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Tu email.." />
+
+          <label for="subject">Mensaje</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 100px"
+          ></textarea>
+
+          <input type="button" onclick="myFunction()" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <section class="footer">
+      <div>
+        <h5>&copy;Isaac Hill, 2023</h5>
+      </div>
+      <div class="media">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                src="images/facebook.png"
+                width="32"
+                alt="Facebook Profile"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/" target="_blank">
+              <img
+                src="images/GitHub-Mark-32px.png"
+                width="32"
+                alt="GitHub Profile"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img
+                src="images/linkedin.png"
+                width="32"
+                alt="LinkedIn Profile"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
